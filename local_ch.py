@@ -1,0 +1,7 @@
+LANGUAGE = 'chinese'
+ROW1_1 = ''
+ROW1_2 = ''
+ROW2_1 = '    月   '
+ROW2_2 = '   投资基础  '
+ROW2_3 = ' 每月利息金额'
+ROW2_4 = '    资本    '
