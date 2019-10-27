@@ -1,8 +1,7 @@
-import local_ch as loc
+import local_en as loc
 
 def month_format(number):
     """
-
     :param number: formatting month number
     :return: formatted string with month number
     """
@@ -12,7 +11,6 @@ def month_format(number):
 
 def table_format(number):
     """
-
     :param number: formatting number for table cell
     :return: formatted string with number
     """
@@ -25,7 +23,6 @@ def table_format(number):
 
 def table_row(col1, col2, col3, col4):
     """
-
     :param col1: string for first column of table
     :param col2: string for second column of table
     :param col3: string for third column of table
@@ -37,7 +34,6 @@ def table_row(col1, col2, col3, col4):
 
 def table(col2, col3, col4):
     """
-
     :param col2: list with values of first column of table
     :param col3: list with values of second column of table
     :param col4: list with values of third column of table
@@ -45,10 +41,10 @@ def table(col2, col3, col4):
     """
     print('-' * 50)
     if loc.LANGUAGE == 'chinese':
-        print('|', loc.ROW2_1, '|', loc.ROW2_2, '|', loc.ROW2_3, '|', loc.ROW2_4, '|', sep='')
+        print(loc.LINE1)
     else:
-        print('|', ' ' * 9, '|', loc.ROW1_1, '|', loc.ROW1_2, '|', ' ' * 12, '|', sep='')
-        print('|', loc.ROW2_1, '|', loc.ROW2_2, '|', loc.ROW2_3, '|', loc.ROW2_4, '|', sep='')
+        print(loc.LINE1)
+        print(loc.LINE2)
     print('-' * 50)
     for i in range(len(col2)):
         print(table_row(i, col2[i], col3[i], col4[i]))
